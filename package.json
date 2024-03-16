@@ -1,0 +1,43 @@
+{
+  "name": "@flaminc/books-types",
+  "description": "Common types for the books app",
+  "version": "0.0.0-development",
+  "author": "capitN.flam",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf --glob dist flaminc-books-types-plugin-*.tgz",
+    "format": "prettier --write .",
+    "lint": "eslint . && prettier --check .",
+    "pre-commit": "lint-staged",
+    "prepare": "husky",
+    "semantic-release": "semantic-release",
+    "type-check": "tsc --pretty --noEmit"
+  },
+  "bugs": "https://github.com/capitnflam/books-types/issues",
+  "devDependencies": {
+    "@commitlint/cli": "19.2.0",
+    "@commitlint/config-conventional": "19.1.0",
+    "@commitlint/types": "19.0.3",
+    "@flaminc/eslint-plugin": "1.1.1",
+    "@types/node": "20.11.28",
+    "husky": "9.0.11",
+    "lint-staged": "15.2.2",
+    "prettier": "3.2.5",
+    "rimraf": "5.0.5",
+    "semantic-release": "23.0.3",
+    "semantic-release-npm-github-publish": "1.5.5",
+    "syncpack": "12.3.0",
+    "typescript": "5.4.2"
+  },
+  "files": [
+    "package.json",
+    "dist"
+  ],
+  "homepage": "https://github.com/capitnflam/books-types#readme",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": "capitnflam/books-types"
+}
