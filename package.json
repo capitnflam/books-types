@@ -24,7 +24,7 @@
     "@commitlint/cli": "19.2.0",
     "@commitlint/config-conventional": "19.1.0",
     "@commitlint/types": "19.0.3",
-    "@flaminc/eslint-plugin": "1.1.1",
+    "@flaminc/eslint-plugin": "1.2.0",
     "@types/node": "20.11.28",
     "@types/validator": "13.11.9",
     "husky": "9.0.11",
