@@ -29,4 +29,11 @@ jobs:
       - name: Build
         run: npm run build
       - name: Test
-        run: npm run test:ci
+        run: npm run test:ci:coverage
+      - name: Code Coverage Report
+        uses: romeovs/lcov-reporter-action@v0.3.1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          filter-changed-files: true
+          delete-old-comments: true
+          title: 'Code Coverage Report'

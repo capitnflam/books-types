@@ -1,3 +1,4 @@
+/* v8 ignore start */
 export {
   type AuthorRequest,
   type AuthorResult,
@@ -25,3 +26,4 @@ export {
   collectionResultSchema,
 } from './collection'
 export { type CollectionsResult, collectionsResultSchema } from './collections'
+/* v8 ignore stop */
