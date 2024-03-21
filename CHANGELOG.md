@@ -1,3 +1,15 @@
+# [1.2.0](https://github.com/capitnflam/books-types/compare/v1.1.0...v1.2.0) (2024-03-21)
+
+
+### chore
+
+* **deps:** update [@flaminc](https://github.com/flaminc)/semantic-releases-configs@1.0.1 [@flaminc](https://github.com/flaminc)/eslint-plugin@1.3.0 ([#9](https://github.com/capitnflam/books-types/issues/9)) ([db32e8b](https://github.com/capitnflam/books-types/commit/db32e8b735f0965e035462e55891337b93a3a7d1))
+
+
+### feat
+
+* **ci:** use common release config ([#8](https://github.com/capitnflam/books-types/issues/8)) ([a142020](https://github.com/capitnflam/books-types/commit/a142020442e80213aac620a39d690851e6d6f4f4))
+
 # [1.1.0](https://github.com/capitnflam/books-types/compare/v1.0.0...v1.1.0) (2024-03-19)
 
 
