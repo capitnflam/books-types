@@ -3,6 +3,6 @@
  */
 // eslint-disable-next-line unicorn/prefer-module
 module.exports = {
-  extends: ['semantic-release-npm-github-publish'],
+  extends: ['@flaminc/semantic-release-configs/npm-github-publish'],
   branches: ['main'],
 }
