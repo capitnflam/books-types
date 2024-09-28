@@ -1,3 +1,15 @@
+## [1.2.1](https://github.com/capitnflam/books-types/compare/v1.2.0...v1.2.1) (2024-09-28)
+
+
+### chore
+
+* **deps:** update packages (#22) ([3641df5](https://github.com/capitnflam/books-types/commit/3641df5225891fa9f3a891e5d750fd1bac8c9463))
+
+
+### fix
+
+* release issue (#24) ([474a313](https://github.com/capitnflam/books-types/commit/474a313fd52b1dc46a75bfa58ba3c1ca9dc784af))
+
 # [1.2.0](https://github.com/capitnflam/books-types/compare/v1.1.0...v1.2.0) (2024-03-21)
 
 
