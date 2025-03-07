@@ -1,7 +1,7 @@
 {
   "name": "@flaminc/books-types",
   "description": "Common types for the books app",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "author": "capitN.flam",
   "scripts": {
     "build": "tsc -p tsconfig.build.json",

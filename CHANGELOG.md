@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/capitnflam/books-types/compare/v1.2.1...v1.2.2) (2025-03-07)
+
+
+### chore
+
+* **deps:** update dependencies (#40) ([be99e4c](https://github.com/capitnflam/books-types/commit/be99e4c7005609fddc63cfed93a6ad3eb39f7431))
+
 ## [1.2.1](https://github.com/capitnflam/books-types/compare/v1.2.0...v1.2.1) (2024-09-28)
 
 
