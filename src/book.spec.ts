@@ -55,7 +55,7 @@ const bookRequestFixtureExpected: BookRequest = {
   uri: '/book/42',
   coverURL,
   title: 'test',
-  synopsis: 'test synopsis\\nnewline',
+  synopsis: String.raw`test synopsis\nnewline`,
   authors: [author21Uri],
 }
 
