@@ -45,7 +45,7 @@ export const bookRequestSchema = z
     synopsis: z
       .string()
       .nullish()
-      .transform((x) => x?.replace(newLineRegEx, '\\n') ?? undefined),
+      .transform((x) => x?.replace(newLineRegEx, String.raw`\n`) ?? undefined),
   })
   .merge(bookCommonSchema)
 
