@@ -12,7 +12,7 @@ type CollectionResultInput = z.input<typeof collectionResultSchema>
 
 const date = new Date()
 
-const collection21Uri = '/collection/21'
+const collection21Uri = '/collections/21'
 const name = 'test collection'
 
 const collectionResultFixture: CollectionResultInput = {
@@ -26,7 +26,7 @@ const collectionResultFixture: CollectionResultInput = {
 const collectionResultFixtureExpected: CollectionResult = {
   uri: collection21Uri,
   name,
-  books: ['/book/42'],
+  books: ['/books/42'],
   createdAt: date.toISOString(),
   updatedAt: date.toISOString(),
 }
@@ -34,13 +34,13 @@ const collectionResultFixtureExpected: CollectionResult = {
 const collectionRequestFixture: CollectionRequestInput = {
   uri: collection21Uri,
   name,
-  books: ['/book/42'],
+  books: ['/books/42'],
 }
 
 const collectionRequestFixtureExpected: CollectionRequest = {
   uri: collection21Uri,
   name,
-  books: ['/book/42'],
+  books: ['/books/42'],
 }
 
 describe('types::collection', () => {

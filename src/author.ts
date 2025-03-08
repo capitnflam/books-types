@@ -13,11 +13,11 @@ export const authorResultSchema = z
   })
   .merge(authorCommonSchema)
   .merge(dateInfoSchema)
-  .transform(transformURI('/author'))
+  .transform(transformURI('/authors'))
 
 export const authorRequestSchema = z
   .object({
-    uri: z.string().refine((x) => x.startsWith('/author/')),
+    uri: z.string().refine((x) => x.startsWith('/authors/')),
   })
   .merge(authorCommonSchema)
 

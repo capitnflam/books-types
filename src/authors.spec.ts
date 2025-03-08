@@ -29,19 +29,19 @@ const authorsResultFixture: AuthorsResultInput = [
 
 const authorsResultFixtureExpected: AuthorsResult = [
   {
-    uri: '/author/42',
+    uri: '/authors/42',
     name: 'Author 1',
     createdAt: date.toISOString(),
     updatedAt: date.toISOString(),
   },
   {
-    uri: '/author/43',
+    uri: '/authors/43',
     name: 'Author 2',
     createdAt: date.toISOString(),
     updatedAt: date.toISOString(),
   },
   {
-    uri: '/author/41',
+    uri: '/authors/41',
     name: 'Author 3',
     createdAt: date.toISOString(),
     updatedAt: date.toISOString(),

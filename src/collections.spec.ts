@@ -50,23 +50,23 @@ const collectionsResultFixture: CollectionsResultInput = [
 
 const collectionsResultFixtureExpected: CollectionsResult = [
   {
-    uri: '/collection/42',
+    uri: '/collections/42',
     name: 'test',
-    books: ['/book/21'],
+    books: ['/books/21'],
     createdAt: date.toISOString(),
     updatedAt: date.toISOString(),
   },
   {
-    uri: '/collection/43',
+    uri: '/collections/43',
     name: 'test2',
-    books: ['/book/22', '/book/23', '/book/24'],
+    books: ['/books/22', '/books/23', '/books/24'],
     createdAt: date.toISOString(),
     updatedAt: date.toISOString(),
   },
   {
-    uri: '/collection/41',
+    uri: '/collections/41',
     name: 'test3',
-    books: ['/book/21'],
+    books: ['/books/21'],
     createdAt: date.toISOString(),
     updatedAt: date.toISOString(),
   },

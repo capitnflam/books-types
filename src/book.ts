@@ -32,16 +32,16 @@ export const bookResultSchema = z
   })
   .merge(bookCommonSchema)
   .merge(dateInfoSchema)
-  .transform(transformURI('/book'))
+  .transform(transformURI('/books'))
   .transform(({ authors, ...rest }) => ({
     ...rest,
-    authors: authors.map(transformURI('/author')).map(({ uri }) => uri),
+    authors: authors.map(transformURI('/authors')).map(({ uri }) => uri),
   }))
 
 export const bookRequestSchema = z
   .object({
-    uri: z.string().refine((x) => x.startsWith('/book/')),
-    authors: z.array(z.string().refine((x) => x.startsWith('/author/'))),
+    uri: z.string().refine((x) => x.startsWith('/books/')),
+    authors: z.array(z.string().refine((x) => x.startsWith('/authors/'))),
     synopsis: z
       .string()
       .nullish()
