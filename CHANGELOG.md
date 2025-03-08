@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/capitnflam/books-types/compare/v1.3.0...v1.3.1) (2025-03-08)
+
+
+### fix
+
+* uris should be plural (#44) ([64cedb7](https://github.com/capitnflam/books-types/commit/64cedb7571deed9a0570fff5a92bf140e4e6df14))
+
 # [1.3.0](https://github.com/capitnflam/books-types/compare/v1.2.2...v1.3.0) (2025-03-08)
 
 
