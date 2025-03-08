@@ -10,7 +10,7 @@ const author21Uri = '/author/21'
 const isbn = '978-3-16-148410-0'
 
 const booksResultFixture: BooksResultInput = {
-  items: [
+  data: [
     {
       id: 42,
       title: 'test',
@@ -49,13 +49,17 @@ const booksResultFixture: BooksResultInput = {
   ],
   meta: {
     currentPage: 1,
-    itemCount: 3,
+    totalItems: 3,
     itemsPerPage: 10,
+    sortBy: [],
+  },
+  links: {
+    current: '/books?page=1',
   },
 }
 
 const booksResultFixtureExpected: BooksResult = {
-  items: [
+  data: [
     {
       uri: '/book/42',
       title: 'test',
@@ -82,8 +86,12 @@ const booksResultFixtureExpected: BooksResult = {
   ],
   meta: {
     currentPage: 1,
-    itemCount: 3,
+    totalItems: 3,
     itemsPerPage: 10,
+    sortBy: [],
+  },
+  links: {
+    current: '/books?page=1',
   },
 }
 
