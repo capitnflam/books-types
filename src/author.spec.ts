@@ -12,7 +12,7 @@ type AuthorResultInput = z.input<typeof authorResultSchema>
 
 const date = new Date()
 
-const author42Uri = '/author/42'
+const author42Uri = '/authors/42'
 
 const authorResultFixture: AuthorResultInput = {
   id: 42,

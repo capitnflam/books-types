@@ -13,7 +13,7 @@ type BookResultInput = z.input<typeof bookResultSchema>
 const date = new Date()
 
 const coverURL = 'http://foo.bar/cover.jpg'
-const author21Uri = '/author/21'
+const author21Uri = '/authors/21'
 
 const bookResultFixture: BookResultInput = {
   id: 42,
@@ -31,7 +31,7 @@ const bookResultFixture: BookResultInput = {
 }
 
 const bookResultFixtureExpected: BookResult = {
-  uri: '/book/42',
+  uri: '/books/42',
   coverURL,
   title: 'test',
   synopsis: `test synopsis
@@ -43,7 +43,7 @@ newline`,
 }
 
 const bookRequestFixture: BookRequestInput = {
-  uri: '/book/42',
+  uri: '/books/42',
   coverURL,
   title: 'test',
   synopsis: `test synopsis
@@ -52,7 +52,7 @@ newline`,
 }
 
 const bookRequestFixtureExpected: BookRequest = {
-  uri: '/book/42',
+  uri: '/books/42',
   coverURL,
   title: 'test',
   synopsis: String.raw`test synopsis\nnewline`,
