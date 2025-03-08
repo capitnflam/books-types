@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/capitnflam/books-types/compare/v1.2.2...v1.3.0) (2025-03-08)
+
+
+### feat
+
+* **pagination:** update pagination schema following switch to nestjs-paginate (#42) ([4bebca0](https://github.com/capitnflam/books-types/commit/4bebca02b81a390dd1fa9ccaaa972d075a49a6de))
+
 ## [1.2.2](https://github.com/capitnflam/books-types/compare/v1.2.1...v1.2.2) (2025-03-07)
 
 
