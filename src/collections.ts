@@ -11,10 +11,10 @@ export const collectionsResultSchema = z.array(
       books: z.array(z.object({ id: z.number() })),
     })
     .merge(dateInfoSchema)
-    .transform(transformURI('/collection'))
+    .transform(transformURI('/collections'))
     .transform(({ books, ...rest }) => ({
       ...rest,
-      books: books.map(transformURI('/book')).map(({ uri }) => uri),
+      books: books.map(transformURI('/books')).map(({ uri }) => uri),
     })),
 )
 

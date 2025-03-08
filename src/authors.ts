@@ -10,7 +10,7 @@ export const authorsResultSchema = z.array(
       name: z.string(),
     })
     .merge(dateInfoSchema)
-    .transform(transformURI('/author')),
+    .transform(transformURI('/authors')),
 )
 
 export type AuthorsResult = z.infer<typeof authorsResultSchema>

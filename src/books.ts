@@ -17,10 +17,10 @@ export const booksResultItemSchema = z
       .transform((x) => x ?? undefined),
   })
   .merge(dateInfoSchema)
-  .transform(transformURI('/book'))
+  .transform(transformURI('/books'))
   .transform(({ authors, ...rest }) => ({
     ...rest,
-    authors: authors.map(transformURI('/author')).map(({ uri }) => uri),
+    authors: authors.map(transformURI('/authors')).map(({ uri }) => uri),
   }))
 
 export const booksResultSchema = withPagination(booksResultItemSchema)

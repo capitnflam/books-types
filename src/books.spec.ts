@@ -6,7 +6,7 @@ type BooksResultInput = z.input<typeof booksResultSchema>
 
 const date = new Date()
 
-const author21Uri = '/author/21'
+const author21Uri = '/authors/21'
 const isbn = '978-3-16-148410-0'
 
 const booksResultFixture: BooksResultInput = {
@@ -61,7 +61,7 @@ const booksResultFixture: BooksResultInput = {
 const booksResultFixtureExpected: BooksResult = {
   data: [
     {
-      uri: '/book/42',
+      uri: '/books/42',
       title: 'test',
       authors: [author21Uri],
       isbn,
@@ -69,14 +69,14 @@ const booksResultFixtureExpected: BooksResult = {
       updatedAt: date.toISOString(),
     },
     {
-      uri: '/book/43',
+      uri: '/books/43',
       title: 'test2',
       authors: [author21Uri],
       createdAt: date.toISOString(),
       updatedAt: date.toISOString(),
     },
     {
-      uri: '/book/41',
+      uri: '/books/41',
       title: 'test3',
       authors: [author21Uri],
       isbn,

@@ -14,16 +14,16 @@ export const collectionResultSchema = z
   })
   .merge(collectionCommonSchema)
   .merge(dateInfoSchema)
-  .transform(transformURI('/collection'))
+  .transform(transformURI('/collections'))
   .transform(({ books, ...rest }) => ({
     ...rest,
-    books: books.map(transformURI('/book')).map(({ uri }) => uri),
+    books: books.map(transformURI('/books')).map(({ uri }) => uri),
   }))
 
 export const collectionRequestSchema = z
   .object({
-    uri: z.string().refine((x) => x.startsWith('/collection/')),
-    books: z.array(z.string().refine((x) => x.startsWith('/book/'))),
+    uri: z.string().refine((x) => x.startsWith('/collections/')),
+    books: z.array(z.string().refine((x) => x.startsWith('/books/'))),
   })
   .merge(collectionCommonSchema)
 
