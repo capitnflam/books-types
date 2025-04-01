@@ -29,7 +29,7 @@
     "@flaminc/semantic-release-configs": "1.0.3",
     "@types/node": "22.13.9",
     "@types/validator": "13.12.2",
-    "@vitest/coverage-v8": "3.0.8",
+    "@vitest/coverage-v8": "3.1.1",
     "@vitest/ui": "3.0.8",
     "husky": "9.1.7",
     "lint-staged": "15.4.3",
